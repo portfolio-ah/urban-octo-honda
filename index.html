@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.Honda | Portfolio</title>
+<!-- Google Fonts の読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="top">
+<!-- メインビジュアル＆ヘッダーを包むコンテナ -->
+<header class="hero-section">
+    <!-- ナビゲーションメニュー -->
+    <nav class="main-nav">
+<div class="main-nav__inner">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#skills">Skills</a></li>
+                
+<li><a href="https://docs.google.com/forms/d/e/1FAIpQLScm-52td1kGaC-MOQZZFQ_K1A0TSvAjPJlAWVV_Ph6POiS8Gg/viewform" target="_blank" rel="noopener noreferrer">Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+
+<button class="hamburger-btn" id="js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    
+    <nav class="sp-nav" id="js-sp-nav">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#skills">Skills</a></li>
+            
+<li><a href="https://docs.google.com/forms/d/e/1FAIpQLScm-52td1kGaC-MOQZZFQ_K1A0TSvAjPJlAWVV_Ph6POiS8Gg/viewform" target="_blank" rel="noopener noreferrer">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- ヒーローコンテンツ（キャッチコピーや写真） -->
+    <div class="hero-content">
+        <!-- 左側：テキストエリア -->
+        <div class="hero-text">
+            <h1>SHAPE<br>YOUR MIND.</h1>
+            <p>心を動かし、記憶に残るビジュアルを。</p>
+        </div>
+
+        <!-- 右側：ビジュアルエリア（写真と縦書きの名前） -->
+        <div class="hero-visual">
+
+            <span class="vertical-name">A. Honda</span>
+        </div>
+    </div>
+    </header>
+
+    <!-- ===================================
+   About セクション
+=================================== -->
+  <section id="about" class="about-me"> 
+    <div class="container">
+    
+    <!-- 1. 左側：文章エリア -->
+    <div class="about-me__text-content">
+      <p class="about-me__sub-title">ABOUT ME</p>
+      <h2 class="about-me__main-title">伝えるだけじゃない、<br>心を動かすデザインを。</h2>
+      
+      <div class="about-me__profile-text">
+<p>はじめて、本田と申します！<br>
+幼少期からモノづくりが好きで、おしゃぶりとレゴブロックを舐めながら僕のクリエイティビティは始まりました。両親曰く「ブロックを作らせたらあっくんは天才や！！」とのこと。<br>
+数年後に気づく、極めて凡人であると。</p>
+
+<p>大学ではデザインを専攻しましたが、卒業後は一度ビジネスの現場へ進みました。<br>
+自分という「人柄」を売る仕事を経験し、さまざまなモノを売る日々は楽しかったものの、心のどこかで「やっぱり自分の手でモノを作って届けたい」という初期衝動が消えず、社会人になって改めてデザインの世界へ飛び込みました。</p>
+
+<p>営業とデザイン、一見真逆の世界ですが、本質は意外と同じだと思っています。ビジネスの現場で学んだのは、「綺麗に作れても、相手に伝わらないと意味がない」ということ。一方で、言葉でお客さんの心を動かしてきた経験があるからこそ、デザインでも同じように人の心を動かせるはずだと信じています。</p>
+
+<p>実は、今目を通していただいているこのサイトが<br>僕の「WEB作品第一号」です！
+<small style="font-size: 0.85em; opacity: 0.6;">いやー、本当にしんどかった。</small></p>
+
+<p>将来は、自社ブランドを立ち上げるという野望があります。そのために日々クリエイティブ力を磨いている最中です！</p>
+
+<p>まずは「なんとなく頭の中にはあるけど、うまく形にできない。」<br>
+そんなアイデアを、一緒にワクワクしながら形にしていけたら嬉しいです。まずはお気軽に、雑談ベースでも構いませんのでお聞かせください！</p>      </div>
+    </div>
+
+    <div class="about-me__visual">
+      <!-- 自分の写真 -->
+      <img src="./images/akkunimg.webp" alt="あっくんの写真" class="about-me__photo">
+    </div>
+
+    <!-- 3. 右側：プロフィール項目エリア（前略プロフ風） -->
+  <!-- SEO対策：ここがプロフィールの塊であることを示す枠を追加 -->
+<section class="about-me__profile">
+    <dl class="about-me__spec-list">
+        <dl class="about-me__spec-list">
+    <div class="spec-row">
+        <dt>A.K.A</dt>
+        <dd>あっくん</dd>
+    </div>
+    <div class="spec-row">
+        <dt>LOCATION</dt>
+        <dd>福岡県</dd>
+    </div>
+    <!-- これを全部の項目に適用してください -->
+    <div class="spec-row">
+        <dt>JOB</dt>
+        <dd>WEB/Graphic Designer</dd>
+    </div>
+    <div class="spec-row">
+        <dt>SPECIALTY</dt>
+        <dd>WEBデザイン / バナー制作 / チラシ制作 / コーディング（勉強中）</dd>
+    </div>
+    <div class="spec-row">
+        <dt>TOOLS</dt>
+        <dd>Photoshop / Illustrator / Figma / VS Code</dd>
+    </div>
+    <div class="spec-row">
+        <dt>FAVORITE</dt>
+        <dd>ONE PIECE（本誌追ってます）</dd>
+    </div>
+    <div class="spec-row">
+        <dt>HOBBY</dt>
+        <dd>丁寧な食生活</dd>
+    </div>
+    <div class="spec-row">
+        <dt>SPECIAL SKILL</dt>
+        <dd>福岡で一番美味しいプリン作れます。</dd>
+    </div>
+    
+</dl>
+</section>
+</div>
+
+  <!-- 4. 背景・四隅の固定イメージ（装飾用） -->
+  <div class="about-me__deco-top-right"></div>
+  <div class="about-me__deco-bottom-left"></div>
+</section>
+    <!-- ===================================
+   WORKS セクション
+=================================== -->
+<section id="works" class="works">
+  <div class="works__inner">
+    <h2 class="works__title">制作実績</h2>
+    
+    <!-- フィルターボタン -->
+    <ul class="works__filter-list">
+      <li class="works__filter-item"><button type="button" class="works__filter-btn is-active" data-filter="all">ALL</button></li>
+      <li class="works__filter-item"><button type="button" class="works__filter-btn" data-filter="web">WEB / BANNER</button></li>
+      <li class="works__filter-item"><button type="button" class="works__filter-btn" data-filter="print">PRINT / GRAPHIC</button></li>
+    </ul>
+
+    <!-- 作品一覧 -->
+    <div class="works__list">
+      <article class="works__item" data-category="web" data-initial="true">
+        <a href="datsumou.html" class="works__link">
+          <div class="works__img-wrapper">
+            <img src="images/sdatsumou.webp" alt="脱毛器バナー"></div>
+          <div class="works__text-overlay">
+            <p class="works__item-category">WEB / BANNER</p>
+            <h3 class="works__item-title">脱毛器バナー</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="works__item" data-category="print" data-initial="true">
+        <a href="coffeu.html" class="works__link">
+          <div class="works__img-wrapper">
+            <img src="images/scoffeu.webp" alt="A4季刊誌裏">
+          </div>
+          <div class="works__text-overlay">
+            <p class="works__item-category">PRINT / GRAPHIC</p>
+            <h3 class="works__item-title">A4季刊誌裏</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="works__item" data-category="print" data-initial="true">
+        <a href="coffeo.html" class="works__link">
+          <div class="works__img-wrapper">
+            <img src="images/scoffeo.webp" alt="A4季刊誌表">
+          </div>
+          <div class="works__text-overlay">
+            <p class="works__item-category">PRINT / GRAPHIC</p>
+            <h3 class="works__item-title">A4季刊誌表</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="works__item" data-category="print" data-initial="true">
+        <a href="salonu.html" class="works__link">
+          <div class="works__img-wrapper">
+            <img src="images/ssalonu.webp" alt="美容室DM裏">
+          </div>
+          <div class="works__text-overlay">
+            <p class="works__item-category">PRINT / GRAPHIC</p>
+            <h3 class="works__item-title">美容室DM裏</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="works__item" data-category="print">
+        <a href="salono.html" class="works__link">
+          <div class="works__img-wrapper">
+            <img src="images/ssalono.webp" alt="美容室DM表">
+          </div>
+          <div class="works__text-overlay">
+            <p class="works__item-category">PRINT / GRAPHIC</p>
+            <h3 class="works__item-title">美容室DM表</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="works__item" data-category="print">
+        <a href="kodomou.html" class="works__link">
+          <div class="works__img-wrapper">
+            <img src="images/skodomou.webp" alt="A4リーフレット中面">
+          </div>
+          <div class="works__text-overlay">
+            <p class="works__item-category">PRINT / GRAPHIC</p>
+            <h3 class="works__item-title">A4リーフレット中面</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="works__item" data-category="print">
+        <a href="kodomoo.html" class="works__link">
+          <div class="works__img-wrapper">
+            <img src="images/skodomoo.webp" alt="A4リーフレット表紙">
+          </div>
+          <div class="works__text-overlay">
+            <p class="works__item-category">PRINT / GRAPHIC</p>
+            <h3 class="works__item-title">A4リーフレット表紙</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="works__item" data-category="print">
+        <a href="cooking.html" class="works__link">
+          <div class="works__img-wrapper">
+            <img src="images/scooking.webp" alt="料理教室チラシ">
+          </div>
+          <div class="works__text-overlay">
+            <p class="works__item-category">PRINT / GRAPHIC</p>
+            <h3 class="works__item-title">料理教室チラシ</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="works__item" data-category="print">
+        <a href="shunki.html" class="works__link">
+          <div class="works__img-wrapper">
+            <img src="images/sshunki.webp" alt="春季講習バナー">
+          </div>
+          <div class="works__text-overlay">
+            <p class="works__item-category">PRINT / GRAPHIC</p>
+            <h3 class="works__item-title">春季講習バナー</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="works__item" data-category="web">
+        <a href="kyujin.html" class="works__link">
+          <div class="works__img-wrapper">
+            <img src="images/skyujin.webp" alt="警備求人バナー">
+          </div>
+          <div class="works__text-overlay">
+            <p class="works__item-category">WEB / BANNER</p>
+            <h3 class="works__item-title">警備求人バナー</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="works__item" data-category="web">
+        <a href="blackf.html" class="works__link">
+          <div class="works__img-wrapper">
+            <img src="images/sblackf.webp" alt="ブラックフライデー">
+          </div>
+          <div class="works__text-overlay">
+            <p class="works__item-category">WEB / BANNER</p>
+            <h3 class="works__item-title">新春福袋の広告用バナー</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="works__item" data-category="web">
+        <a href="fuku.html" class="works__link">
+          <div class="works__img-wrapper">
+            <img src="images/sfuku.webp" alt="新春福袋の広告用バナー">
+          </div>
+          <div class="works__text-overlay">
+            <p class="works__item-category">WEB / BANNER</p>
+            <h3 class="works__item-title">新春福袋の広告用バナー</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="works__item" data-category="web">
+        <a href="tube.html" class="works__link">
+          <div class="works__img-wrapper">
+            <img src="images/stube.webp" alt="Youtube誘導バナー">
+          </div>
+          <div class="works__text-overlay">
+            <p class="works__item-category">WEB / BANNER</p>
+            <h3 class="works__item-title">Youtube誘導バナー</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="works__item" data-category="print">
+        <a href="niku.html" class="works__link">
+          <div class="works__img-wrapper">
+            <img src="images/sniku.webp" alt="学生向けイベントチラシ（焼肉）">
+          </div>
+          <div class="works__text-overlay">
+            <p class="works__item-category">PRINT / GRAPHIC</p>
+            <h3 class="works__item-title">学生向けイベントチラシ</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="works__item" data-category="web">
+        <a href="carwash.html" class="works__link">
+          <div class="works__img-wrapper">
+            <img src="images/scarwash.webp" alt="無水洗車 ストーリー用">
+          </div>
+          <div class="works__text-overlay">
+            <p class="works__item-category">WEB / BANNER</p>
+            <h3 class="works__item-title">無水洗車 ストーリー用</h3>
+          </div>
+        </a>
+      </article>
+
+      <article class="works__item" data-category="web">
+        <a href="pants.html" class="works__link">
+          <div class="works__img-wrapper">
+            <img src="images/spants.webp" alt="旅×多機能パンツバナー">
+          </div>
+          <div class="works__text-overlay">
+            <p class="works__item-category">WEB / BANNER</p>
+            <h3 class="works__item-title">旅×多機能パンツバナー</h3>
+          </div>
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+    <!-- ===================================
+   SKILL セクション
+=================================== -->
+<section id="skills" class="skills">
+  <div class="skills__inner">
+    
+    <!-- ▼ タイトルエリア -->
+    <div class="skills__header">
+      <p class="skills__sub-title">SKILLS/STRENGTHS</p>
+      <h2 class="skills__main-title">スキルと、強み。</h2>
+    </div>
+
+    <!-- ▼ 4つのスキルが並ぶ大きなお皿 -->
+    <div class="skills__list">
+      
+      <!-- スキル01 -->
+      <div class="skills__item">
+        <span class="skills__num">01</span>
+        <h3 class="skills__name">DESIGN</h3>
+        <p class="skills__text">「伝わる」ための設計を。<br>
+          単なる見た目の綺麗さではなく、ターゲット分析と整理された情報設計で、ビジネスの目的に直結するビジュアルを構築します。</p>
+      </div>
+
+      <!-- スキル02 -->
+      <div class="skills__item">
+        <span class="skills__num">02</span>
+        <h3 class="skills__name">GROWTH</h3>
+        <p class="skills__text">時代に合わせ、常に進化を。<br>
+          デザインもコーディングも技術は日々更新されます。現状に満足せず、新しい表現を学び続けることで、最適な質を届けます。</p>
+      </div>
+
+      <!-- スキル03 -->
+      <div class="skills__item">
+        <span class="skills__num">03</span>
+        <h3 class="skills__name">PROGRESS</h3>
+        <p class="skills__text">不安を消す、着実な進行管理。<br>
+          レスの爆速よりも「確実な進捗」を重視。フェーズごとの丁寧な報告で認識のズレをなくし、迷子にさせない進行をお約束します。</p>
+      </div>
+
+      <!-- スキル04 -->
+      <div class="skills__item">
+        <span class="skills__num">04</span>
+        <h3 class="skills__name">TRUST</h3>
+        <p class="skills__text">リスペクトし合える関係を。<br>
+          お互いをビジネスパートナーとして尊重し、安心してお任せいただける関係性を大切に。双方が納得いくゴールを一緒に目指します。</p>
+      </div>
+
+    </div> 
+  </div>
+    <div class="skills__deco-top-right"></div>
+</section>
+
+    <!-- ===================================
+   CONTACT セクション
+=================================== -->
+<section id="contact" class="contact">
+  <div class="contact__inner">
+    
+    <!-- 左側：タイトル -->
+    <div class="contact__title-area">
+      <h2 class="contact__main-title">LET'S<br>WORK<br>TOGETHER</h2>
+    </div>
+
+    <!-- 右側：詳細・ボタン -->
+    <div class="contact__content">
+      <p class="contact__text">
+        お仕事のご依頼やご相談など、<br>
+        お気軽にお問い合わせください。
+      </p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScm-52td1kGaC-MOQZZFQ_K1A0TSvAjPJlAWVV_Ph6POiS8Gg/viewform?usp=publish-editor" class="contact__btn">CONTACT ME</a>
+    </div>
+
+  </div>
+  
+  <!-- 下の方に配置されるであろう BACK TO TOP -->
+  <div class="contact__footer">
+    <a href="#top" class="back-to-top">BACK TO TOP</a>
+  </div>
+</section>
+    <!-- ===================================
+   FOOTER セクション
+=================================== -->
+
+<footer class="footer">
+  <p>&copy; 2026 A.Honda Portfolio</p>
+</footer>
+
+<!-- ▼ ここから追加：作品を切り替える魔法のJavaScript ▼ -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterBtns = document.querySelectorAll('.works__filter-btn');
+    const worksItems = document.querySelectorAll('.works__item');
+
+    // フィルタリング処理をする関数
+    const filterWorks = (targetCategory) => {
+      worksItems.forEach(item => {
+        // ALLの時は全部出す
+        if (targetCategory === 'all') {
+          item.style.display = 'block';
+        } 
+        // 指定カテゴリと一致するものだけ出す
+        else {
+          item.style.display = (item.dataset.category === targetCategory) ? 'block' : 'none';
+        }
+      });
+    };
+
+    // 1. 【初期表示】ページを開いた時は initial="true" のものだけ表示
+    worksItems.forEach(item => {
+      item.style.display = (item.dataset.initial === 'true') ? 'block' : 'none';
+    });
+
+    // 2. ボタンクリック時の処理
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+
+        const filterValue = btn.getAttribute('data-filter');
+        filterWorks(filterValue);
+      });
+    });
+  });
+</script>
+
+
+
+<!-- ▼ ここから追加：ハンバーガーメニュー▼ -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburgerBtn = document.querySelector('#js-hamburger');
+    const spNav = document.querySelector('#js-sp-nav');
+    const spNavLinks = document.querySelectorAll('.sp-nav a'); // メニュー内のリンク
+
+    // 1. ハンバーガーボタンをクリックした時の処理
+    if(hamburgerBtn && spNav) {
+      hamburgerBtn.addEventListener('click', () => {
+        // ボタンに「is-active」をつけ外しして、×印にする
+        hamburgerBtn.classList.toggle('is-active');
+        // メニュー画面に「is-active」をつけ外しして、表示・非表示を切り替える
+        spNav.classList.toggle('is-active');
+      });
+    }
+
+    // 2. メニューの中のリンク（Aboutなど）をクリックした時に、メニューを閉じる処理
+    spNavLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        hamburgerBtn.classList.remove('is-active');
+        spNav.classList.remove('is-active');
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,1515 @@
+/* ===================================
+   Base
+=================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0b0b0b;
+  color: #ffffff;
+  font-family: 'Crimson Text', 'Noto Serif JP', serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ===================================
+   Header
+=================================== */
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: linear-gradient(to bottom, rgba(11, 11, 11, 0.8), rgba(11, 11, 11, 0));
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.main-nav__inner {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.main-nav a:hover {
+  opacity: 1;
+}
+
+/* ===================================
+   Hero
+=================================== */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 40px;
+  box-sizing: border-box;
+  background-image: url('../images/Hero.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #0b0b0b;
+}
+
+/* --- ヒーローコンテンツ --- */
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 1440px;
+  margin: 40px auto 0 auto;
+}
+
+.hero-text {
+  margin-bottom: 80px;
+}
+
+.hero-text h1 {
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+  padding: 0 40px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #cccccc;
+  letter-spacing: 0.1em;
+  padding: 0px 40px;
+}
+
+.hero-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-right: 100px;
+}
+
+.profile-img-wrap {
+  width: 350px;
+  height: auto;
+}
+
+.profile-img-wrap img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.vertical-name {
+  writing-mode: vertical-rl;
+  font-size: 24px;
+  letter-spacing: 0.2em;
+  transform: translateY(250px) translateX(100px);
+}
+
+/* ===================================
+   About
+=================================== */
+.about-me {
+  position: relative;
+  padding: 80px 0;
+  background-image: url('../images/About.webp');
+  /* ニット背景画像 */
+  background-repeat: repeat;
+  background-color: #f5f5f5;
+  color: #333333;
+  overflow: hidden;
+}
+
+.about-me .container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 50px;
+}
+
+.about-me__text-content {
+  flex: 1;
+  min-width: 464px;
+}
+
+.about-me__sub-title {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.about-me__main-title {
+  font-size: 32px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.about-me__profile-text p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+/* 写真エリア */
+.about-me__visual {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.about-me__photo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ==========================================
+  右側：プロフィール項目
+   ========================================== */
+.about-me__spec-list {
+  width: 280px;
+  margin: 0;
+  padding: 0;
+}
+
+/* 項目名（AKA,LOCATION...） */
+.about-me__spec-list dt {
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: #333;
+}
+
+.about-me__spec-list dt:first-child {
+  margin-top: 0;
+}
+
+/* 中身 */
+.about-me__spec-list dd {
+  margin: 0;
+  padding: 8px 0 5px 0;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #333;
+}
+
+/* ==========================================
+   四隅の固定イメージ
+   ========================================== */
+.about-me__deco-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background-image: url('../images/himatsu.png');
+  /* 右上の画像 */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about-me__deco-bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  height: 100px;
+  background-image: url('../images/Hype.png');
+  /* 左下の画像 */
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+/* ===================================
+   Works
+=================================== */
+.works {
+  padding: 80px 0;
+}
+
+.works__inner {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 40px;
+}
+
+.works__title::before {
+  content: "Works";
+  font-size: 14px;
+  color: #888888;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
+}
+
+.works__title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 30px;
+  text-align: left;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.works__filter-list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  margin-bottom: 40px;
+  list-style: none;
+  padding: 0;
+}
+
+.works__filter-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: 'Crimson Text', serif;
+  color: #888888;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  transition: color 0.3s;
+}
+
+.works__filter-btn:hover,
+.works__filter-btn.is-active {
+  color: #ffffff;
+}
+
+
+.works__list {
+  display: flex;
+  flex-wrap: wrap;
+  /* 4つ並んだら自動で次の段に折り返す*/
+  gap: 20px;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+.works__item {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  width: calc((100% - 60px) / 4);
+  box-sizing: border-box;
+}
+
+
+.works__img-wrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #333333;
+  /* これ多分あとで消す*/
+  margin-bottom: 0;
+}
+
+.works__link {
+  display: block;
+  position: relative;
+  /* 💡 height: 300px; と overflow: hidden; は文字が消える原因なので削除しました！ */
+}
+
+.works__img-wrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #333333; /* これ多分あとで消す*/
+  margin-bottom: 0;
+  overflow: hidden; /* 💡 画像が拡大した時に枠からはみ出さないようにする */
+}
+
+/* 💡 画像そのものの設定（ここに追加） */
+.works__img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-out; /* アニメーションを滑らかに */
+}
+
+/* 💡 マウスホバーで「画像だけ」を拡大させる */
+.works__link:hover .works__img-wrapper img {
+  transform: scale(1.1);
+}
+
+.works__text-overlay {
+  /* 💡 position: absolute などの「重ねる設定」を全消去しました！ */
+  padding: 15px 0 0 0; /* 画像と文字の間に少し余白をとる */
+  text-align: left; /* お好みで center にしてもOKです */
+}
+
+/* 文字の見た目を少し整える（おまけ） */
+.works__item-category {
+  font-size: 12px;
+  color: #888888;
+  letter-spacing: 0.1em;
+  margin-bottom: 5px;
+}
+
+.works__item-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+/* ===================================
+   Skills
+=================================== */
+.skills {
+  padding: 80px 0;
+  background-color: #f5f5f5;
+  /* カンプと同じ薄いグレーを敷く */
+}
+
+/* --- 元の .skills に2行追加します --- */
+.skills {
+  position: relative;
+  /* 👈 追加：画像を「このセクション基準」で配置するため */
+  overflow: hidden;
+  /* 👈 追加：画像が画面外にはみ出して横スクロールが出るのを防ぐ */
+  padding: 80px 0;
+  background-color: #f5f5f5;
+}
+
+/* --- ▼ 新しくこのスタイルを一番下などに追加！ --- */
+.skills__deco-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  /* 📐 カンプのサイズに合わせて調整してね！ */
+  height: 200px;
+  /* 📐 カンプのサイズに合わせて調整してね！ */
+  background-image: url('../images/kado.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  /* 👈 画像の下にある文字を選択できるようにする魔法 */
+}
+
+.skills__inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.skills__header {
+  margin-bottom: 60px;
+}
+
+.skills__sub-title {
+  font-size: 14px;
+  color: #888888;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
+}
+
+.skills__main-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.skills,
+.skills__main-title,
+.skills__name,
+.skills__text {
+  color: #333333;
+}
+
+.skills__num {
+  color: #aaaaaa;
+}
+
+.skills__list {
+  display: flex;
+}
+
+.skills__item {
+  flex: 1;
+}
+
+.skills__item:not(:last-child) {
+  border-right: 1px solid #dddddd;
+}
+
+.skills__item {
+  padding: 0 40px;
+}
+
+.skills__num {
+  display: block;
+  font-size: 60px;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.skills__name {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  margin-bottom: 15px;
+}
+
+.skills__text {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* ===================================
+   Contact
+=================================== */
+
+.contact {
+  padding: 80px 0;
+  position: relative;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.contact__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.contact__main-title {
+  font-size: 80px;
+  line-height: 1.2;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.contact__content {
+  width: 400px;
+}
+
+.contact__text {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.contact__mail {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.contact__btn {
+  display: inline-block;
+  padding: 15px 40px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.contact__btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.contact__footer {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+
+.back-to-top {
+  display: block;
+  writing-mode: vertical-rl;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  position: relative;
+  height: 150px;
+}
+
+.back-to-top::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 2%;
+  transform: translateX(-50%);
+  width: 1px;
+  background-color: #ffffff;
+  animation: stepLine 1s linear infinite;
+}
+
+/* ヌルヌル伸びてパッと戻るやつ*/
+@keyframes stepLine {
+  0% {
+    height: 20px;
+  }
+
+  25% {
+    height: 40px;
+  }
+
+  50% {
+    height: 60px;
+  }
+
+  100% {
+    height: 100px;
+  }
+}
+
+/* ===================================
+   Footer
+=================================== */
+.footer {
+  background-image: url(../images/footer.png);
+  color: #666;
+  /* 文字色は真っ黒にしない */
+  text-align: center;
+  padding: 10px 0;
+  /* 上下の余白 */
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+
+
+
+/* ===================================
+   Case Study (Subpage Styles)
+=================================== */
+
+/* --- 1. 子ページ全体のベース設定（下半分が白になります） --- */
+body.is-subpage {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* 子ページ内のテキストは濃いグレーで統一 */
+body.is-subpage h1,
+body.is-subpage h2,
+body.is-subpage h3,
+body.is-subpage dt,
+body.is-subpage dd {
+  color: #333333;
+}
+
+/* --- 薄グレーの背景グループ（上半分を優しく包む） --- */
+.case-study__top-section {
+  background-color: #f5f5f5;
+  padding-bottom: 80px;
+}
+
+/* --- 2. サブヘッダー（戻るリンク） --- */
+.sub-header {
+  width: 100%;
+  padding: 30px 0;
+}
+
+.sub-header__inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.back-link {
+  color: #333333;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  transition: opacity 0.3s;
+}
+
+.back-link:hover {
+  opacity: 0.6;
+}
+
+/* --- 3. メインコンテンツエリア（下半分） --- */
+.case-study {
+  padding: 80px 0 40px 0;
+}
+
+/* --- 3. ヒーローエリア（タイトルと画像の横並び） --- */
+.case-study__hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+}
+
+/* 左側：タイトルエリア */
+.case-study__header {
+  width: 35%;
+}
+
+.case-study__category {
+  font-size: 14px;
+  color: #888888;
+  letter-spacing: 0.2em;
+  margin-bottom: 10px;
+}
+
+.case-study__title {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.case-study__subtitle {
+  font-size: 18px;
+  color: #666666;
+}
+/* 右側：コンテナ（枠）の指定をシンプルにし、レイアウトの箱としてだけ機能させる */
+.case-study__visual {
+  width: 60%;
+  max-width: 900px;
+  height: auto;
+  max-height: 900px;
+  background-color: transparent;
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+/* 🌟 画像自体を直接スタイリングする（ここにすべてをまとめる） */
+.case-study__image {
+  width: 100%;
+  height: auto;
+  max-height: 900px;
+  object-fit: contain;
+  display: block;
+}
+
+/* --- 4. 概要 & 企画詳細（2カラムレイアウト） --- */
+.case-study__info-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  margin-bottom: 40px;
+}
+
+/* 各セクションの共通見出し */
+.case-study__section-title {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.case-study__section-title span {
+  font-size: 12px;
+  color: #888888;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+}
+
+/* 左カラム：制作概要（全体枠） */
+.case-study__overview {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+/* --- 🌟 タイトル「OVERVIEW 制作概要」を横並びにする --- */
+.case-study__overview .case-study__section-title {
+  flex-direction: row;
+  /* 👈 縦から横並びに！ */
+  align-items: baseline;
+  /* 👈 英語と日本語の文字の底辺をきれいに揃える */
+  gap: 15px;
+  /* 👈 英語と日本語のあいだの隙間 */
+}
+
+.case-study__overview .case-study__section-title span {
+  margin-top: 0;
+  /* 縦並び用の余白をリセット */
+}
+
+/* --- 🌟 リスト部分（Client コンペ など）を一行ずつ横並びにする --- */
+.case-study__meta-list {
+  margin: 0;
+  padding: 0;
+}
+
+/* 一行ごとの囲み枠 */
+.case-study__meta-item {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; は削除しました！ */
+  padding: 15px 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+/* 左側のラベル（Clientなど） */
+.case-study__meta-list dt {
+  width: 180px;
+  /* 👈 横幅を120pxに固定！これで右側の文字の始まりが縦一列に美しく揃います */
+  flex-shrink: 0;
+  /* 横幅が絶対に縮まないようにする魔法 */
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: #888888 !important;
+  margin-top: 0;
+}
+
+/* 右側の値（コンペなど） */
+.case-study__meta-list dd {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  border-bottom: none;
+}
+
+
+
+/* 右カラム：PURPOSEとかの部分 */
+.case-study__details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* 👈 線が入るため、隙間（gap）を少しだけ詰めて微調整 */
+}
+
+/* 👈 【追加】目的・ターゲット・コンセプトの各グループの設定 */
+.case-study__detail-group {
+  border-bottom: 1px solid #dddddd;
+  /* 左側と同じ薄い境界線を引く */
+}
+
+/* 👈 【追加】最後の「コンセプト」だけは、下に線を引かないようにする魔法 */
+.case-study__detail-group:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.case-study__detail-text {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* --- 5. デザインのポイント --- */
+.case-study__points {
+  border-top: 1px solid #dddddd;
+  padding-top: 60px;
+  margin-bottom: 60px;
+}
+
+.case-study__points-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.case-study__points-title span {
+  font-size: 12px;
+  color: #888888;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.case-study__points-grid {
+  display: flex;
+  gap: 0;
+}
+
+.case-study__point-card {
+  flex: 1;
+  padding: 0 40px;
+}
+
+.case-study__point-card:not(:first-child) {
+  border-left: 1px solid #dddddd;
+}
+
+.case-study__point-card:first-child {
+  padding-left: 0;
+}
+
+.case-study__point-card:last-child {
+  padding-right: 0;
+}
+
+.case-study__point-num {
+  display: block;
+  font-size: 48px;
+  color: #aaaaaa;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.case-study__point-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.case-study__point-text {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #666666;
+}
+
+/* --- 6. ページネーション（前後のナビゲーション） --- */
+.case-study__pagination {
+  border-top: 1px solid #dddddd;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination-link {
+  color: #333333;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  transition: opacity 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination-link:hover {
+  opacity: 0.5;
+}
+
+.pagination-link--list {
+  font-size: 14px;
+  color: #333333;
+}
+
+.grid-icon {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3px;
+  width: 13px;
+  height: 13px;
+}
+
+.grid-icon span {
+  display: block;
+  background-color: #333333;
+  width: 5px;
+  height: 5px;
+}
+
+
+
+
+/* --- ハンバーガーメニュー関連（PCでは隠す） --- */
+.hamburger-btn,
+.sp-nav {
+  display: none;
+}
+
+/* --- スマホ表示用（画面幅 768px 以下） --- */
+@media screen and (max-width: 768px) {
+
+  /* 1. POINTエリアの縦積み設定 */
+  .case-study__point-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .case-study__point-title {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  /* 2. OVERVIEWと詳細のレイアウト設定 */
+  .case-study__info-grid {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* 3. 左カラムと右カラムの幅設定 */
+  .case-study__overview,
+  .case-study__details {
+    width: 100%;
+  }
+
+  /* 4. Metaリスト（Client等のラベル）の幅設定 */
+  .case-study__meta-list dt {
+    width: 120px;
+  }
+
+  /* 5. ヘッダー（バナー全体）のレイアウト修正 */
+  .case-study__hero {
+    display: flex;
+    /* 強制的にフレックスレイアウト */
+    flex-direction: column;
+    /* 横並びから縦積みに変更 */
+    align-items: center;
+    /* スマホでは中央寄せに */
+    text-align: center;
+    /* 文字も中央寄せ */
+    gap: 30px;
+    /* テキストと画像の間の隙間 */
+  }
+
+  /* タイトルの文字サイズをスマホ向けに縮小 */
+  .case-study__title {
+    font-size: 28px;
+    line-height: 1.4;
+  }
+
+  /* 画像を幅いっぱいに（あるいは少し余裕を持って表示） */
+  .case-study__visual {
+    width: 100%;
+  }
+
+  .case-study__image {
+    width: 100%;
+    height: auto;
+  }
+
+  /* 5-2. ヘッダーテキストエリアの幅を強制的に広げる */
+  .case-study__header {
+    width: 100%;
+    /* 横幅をめいっぱいにする */
+    padding: 0 20px;
+    /* 画面端にくっつかないよう少し余白を入れる */
+    box-sizing: border-box;
+    /* パディング込みで幅を計算させる */
+    text-align: center;
+    /* 中央寄せ */
+  }
+
+  /* 6. デザインのポイントを縦並びに */
+  .case-study__points-grid {
+    display: flex;
+    flex-direction: column;
+    /* 横並びから縦並びに変更 */
+    gap: 30px;
+    /* カード同士の上下の隙間 */
+  }
+
+  .case-study__points-grid .case-study__point-card {
+    width: 100%;
+    padding: 0 20px;
+    border-left: none;
+    padding-bottom: 20px;
+  }
+
+  /* ーーーーーーーーーーーー
+  インデックスのスマホ版
+  ーーーーーーーーーーーーー*/
+  /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+       ハンバーガーメニューのスタイル
+    ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+  /* 1. PC用のメニューをスマホでは隠す */
+  .main-nav {
+    display: none;
+  }
+
+  /* 2. 右上のハンバーガーボタン（三本線） */
+  .hamburger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 9999;
+    /* 常に一番手前に表示 */
+    position: fixed;
+    /* スクロールしても右上に固定 */
+    top: 25px;
+    right: 20px;
+    padding: 0;
+  }
+
+  /* 三本線の1本1本のデザイン */
+  .hamburger-btn span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    /* 白色の線 */
+    transition: all 0.3s ease;
+    /* ×になる動きを滑らかに */
+  }
+
+  /* 3. ボタンが押された時（×になるアニメーション） */
+  .hamburger-btn.is-active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .hamburger-btn.is-active span:nth-child(2) {
+    opacity: 0;
+    /* 真ん中の線はフワッと消す */
+  }
+
+  .hamburger-btn.is-active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  /* 4. メニュー画面（開いた時の黒い全画面） */
+  .sp-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* 画面いっぱいの高さ */
+    background-color: rgba(17, 17, 17, 0.95);
+    /* 渋い黒の半透明 */
+    z-index: 9998;
+    /* ボタンの1つ下に配置 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* ▼ 初期状態は見えないように隠しておく ▼ */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    /* ふわっと出るアニメーション */
+  }
+
+  /* 5. メニューが開いた時（見えるようになる） */
+  .sp-nav.is-active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* メニューの中の文字の見た目 */
+  .sp-nav ul {
+    text-align: center;
+  }
+
+  .sp-nav li {
+    margin-bottom: 40px;
+    /* 文字同士の縦の隙間を広めに（おしゃれ感） */
+  }
+
+  .sp-nav a {
+    color: #fff;
+    font-size: 28px;
+    font-family: 'Crimson Text', serif;
+    /* 英語の渋いフォントを適用 */
+    letter-spacing: 0.1em;
+    /* 文字の間隔を少し開ける */
+  }
+
+
+  /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+       1. PC用の余計なプロフィール写真を完全に消去！
+       ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+  .hero-visual {
+    display: none !important;
+    /* 💡 これで裏で大暴れしていたPC用の写真や縦書きネームが消えます！ */
+  }
+
+  /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+       2. ヒーローセクション（カンプ通りの画面全体表示）
+       ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+  .hero-section {
+    width: 100%;
+    height: auto;
+    /* 💡 高さを自動にして、余白の発生をストップ！ */
+    aspect-ratio: 375 / 560;
+    /* 💡 カンプ（横375px × 縦590px）の黄金比率を強制固定 */
+
+    background-image: url('../images/sphero.webp');
+    background-size: cover;
+    background-position: right bottom;
+    /* 💡 右寄せ・一番上基準にすることで、顔とスプラッシュが完璧に収まります */
+    background-attachment: scroll;
+
+    padding: 30px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+       3. ヒーローコンテンツ（配置調整）
+       ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+  .hero-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* テキストを一番下（カンプの位置）に配置 */
+    margin: 0;
+    /* PC版の余計なマージンをリセット */
+    padding-bottom: 20px;
+    /* 下側の余白調整 */
+    box-sizing: border-box;
+  }
+
+  /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+       4. ヒーローテキスト（カンプ準拠＆文字切れ解消）
+       ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+  .hero-text {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    box-sizing: border-box;
+  }
+
+  .hero-text h1 {
+    font-size: 11vw;
+    /* カンプ通りの迫力ある大文字サイズ */
+    line-height: 1.1;
+    margin: 0 0 15px 0;
+    padding: 0;
+    /* 💡 PC用のpaddingを完全にリセットして左端にピタッと揃える */
+    letter-spacing: 0.05em;
+    font-weight: bold;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+    color: #cccccc;
+    margin: 0 0 25px 0;
+    padding: 0;
+    /* 💡 PC用のpaddingをリセット */
+    line-height: 1.6;
+  }
+
+
+  /* ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+       About Me セクション（スマホ版・順番完全修正）
+       ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+       
+  .about-me .container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 20px;
+  }
+
+  /* テキストの箱を解除して、中身を並び替えやすくする */
+  .about-me__text-content {
+    display: contents;
+  }
+
+  /* 順序の指定 */
+  .about-me__sub-title {
+    order: 1;
+    margin-bottom: 0;
+  }
+
+  .about-me__visual {
+    order: 2;
+    margin: 0 auto;
+    max-width: 280px;
+  }
+
+  .about-me__profile {
+    order: 3;
+  }
+
+  /* プロフィールカード */
+  .about-me__main-title {
+    order: 4;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .about-me__profile-text {
+    order: 5;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* プロフィールカードのデザイン */
+  .about-me__profile {
+    order: 3;
+    width: 100%;
+    background: #f8f8f8;
+    padding: 24px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    /* 重要：paddingを含めて幅100%にする */
+  }
+
+  /* リスト全体の設定 */
+  .about-me__spec-list {
+    display: flex;
+    flex-direction: column;
+    /* 縦並び */
+    width: 100%;
+  }
+
+  /* 各行のdiv設定（ここに線を引く！） */
+  .spec-row {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    /* 行間の余白 */
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  /* 項目名（dt）と内容（dd） */
+  .about-me__spec-list dt {
+    width: 90px;
+    /* 項目名の幅を固定 */
+    flex-shrink: 0;
+    font-size: 0.8rem;
+    color: #888;
+    font-weight: bold;
+  }
+
+  .about-me__spec-list dd {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #333;
+    flex-grow: 1;
+    /* 残りの幅を全部使う */
+    border-bottom: none;
+  }
+
+
+
+
+  /* ===================================
+   WORKS セクション
+=================================== */
+  .works {
+    padding: 80px 0;
+    background-color: #0b0b0b;
+  }
+
+  .works__inner {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .works__title {
+    align-items: center;
+    /* 左右中央 */
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffffff;
+  }
+
+  /* フィルターボタン（タブメニュー） */
+  .works__filter-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    border-bottom: 3px solid #333;
+    /* これがずっとあるグレーの線 */
+  }
+
+  /* 2. ボタンの余白と相対位置の調整 */
+  .works__filter-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 0 10px 0;
+    font-size: 16px;
+    color: #888;
+    position: relative;
+    /* 線の位置合わせに必須 */
+    transition: color 0.3s;
+  }
+
+  /* アクティブ時の色 */
+  .works__filter-btn.is-active {
+    color: #ffffff;
+  }
+
+  /* 4. 選ばれた時だけ現れる「白い線」 */
+  .works__filter-btn::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    /* グレーの線の上に重ねるため、少しだけ下げる */
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    /* ここが白 */
+    transition: width 0.3s ease;
+  }
+
+  .works__filter-btn.is-active::after {
+    width: 100%;
+  }
+
+  /* 1. アニメーションを完全に無効化 */
+  .works__link:hover .works__img-wrapper {
+    transform: none;
+    /* 拡大を停止 */
+  }
+
+  .works__img-wrapper {
+    transition: none;
+    /* ヌルッとした動きを停止 */
+  }
+
+  /* 2. 画像同士をビチビチにする */
+  .works__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    /* 隙間をゼロに */
+  }
+
+  .works__item {
+    width: 100%;
+    position: relative;
+  }
+
+  .works__link {
+    display: block;
+    position: relative;
+    /* これが大事 */
+  }
+
+  /* 画像の上に黒い半透明を乗せる */
+  .works__link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* 50%の黒 */
+    pointer-events: none;
+  }
+
+/* 文字を画像の上に配置（上下左右めいっぱいに広げて中央寄せに！） */
+  .works__text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;           /* 💡 これで中身をコントロールできるようにする */
+    flex-direction: column;  /* 💡 縦並び */
+    justify-content: center; /* 💡 上下中央 */
+    align-items: center;     /* 💡 左右中央 */
+    text-align: center;      /* 💡 文字自体も中央寄せ */
+    z-index: 2;              /* 文字を一番手前にする */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+/* 💡 カテゴリ（上の英語）を白っぽくする */
+  .works__item-category {
+    color: #cccccc !important;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+  }
+
+  /* 💡 タイトルを「大きめの白文字」に！ */
+  .works__item-title {
+    font-size: 20px;           /* 💡 スマホ画面で見映えのする大きめサイズ！ */
+    font-weight: bold;
+    line-height: 1.4;
+  }
+  /* ===================================
+   SKILLS セクション　すまほ
+=================================== */
+/* --- 1. ヘッダー（「スキルと、強み。」の部分）を中央寄せ --- */
+  .skills__header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  /* --- 2. リストを縦並び ＆ 線を完全に削除 --- */
+  .skills__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+ .skills__item {
+    width: 100%;
+    padding: 40px 20px;
+    border-right: none !important;
+    border-bottom: none ;
+    
+    text-align: center;
+  }
+  /* ===================================
+     CONTACTセクションのスマホ対応
+  =================================== */
+  .contact__inner {
+    flex-direction: column; /* 横並びから縦並びに！ */
+    align-items: center;    /* 左右中央寄せ */
+    text-align: center;     /* 中の文字も中央に */
+  }
+
+  .contact__content {
+    width: 100%;            /* 横幅をめいっぱい使う */
+    margin-bottom: 40px;    /* ボタンとフッターの隙間を確保 */
+  }
+
+  .contact__main-title {
+    font-size: 40px;        /* 80pxだと大きすぎるのでスマホサイズに縮小！ */
+    margin-bottom: 20px;
+  }
+  
+  /* ボタンの調整 */
+  .contact__btn {
+    width: 35%;             /* ボタンを少し大きくして押しやすく */
+    box-sizing: border-box;
+  }
+}
